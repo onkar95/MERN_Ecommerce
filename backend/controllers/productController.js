@@ -222,6 +222,7 @@ exports.getProductReviews = catchAsyncErrors(async (req, res, next) => {
 
 // Delete Review
 exports.deleteReview = catchAsyncErrors(async (req, res, next) => {
+
   const product = await Product.findById(req.query.productId);
 
   if (!product) {
