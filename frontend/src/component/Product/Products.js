@@ -11,6 +11,7 @@ import Typography from "@material-ui/core/Typography";
 import MetaData from "../layout/MetaData";
 
 const categories = [
+  "all",
   "Laptop",
   "Footwear",
   "Bottom",
@@ -26,7 +27,7 @@ const Products = ({ match }) => {
   const alert = useAlert();
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [price, setPrice] = useState([0, 25000]);
+  const [price, setPrice] = useState([0, 50000]);
   const [category, setCategory] = useState("");
 
   const [ratings, setRatings] = useState(0);
@@ -41,7 +42,6 @@ const Products = ({ match }) => {
   } = useSelector((state) => state.products);
 
   const keyword = match.params.keyword;
-
   const setCurrentPageNo = (e) => {
     setCurrentPage(e);
   };
@@ -84,7 +84,7 @@ const Products = ({ match }) => {
               valueLabelDisplay="auto"
               aria-labelledby="range-slider"
               min={0}
-              max={25000}
+              max={50000}
             />
 
             <Typography>Categories</Typography>

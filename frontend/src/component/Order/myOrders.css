@@ -10,6 +10,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  margin-top: 80px;
 }
 
 #myOrdersHeading {
@@ -59,6 +60,7 @@
   .myOrdersPage {
     padding: 0;
     height: 93vh;
+    margin-top: 0;
   }
 
   #myOrdersHeading {

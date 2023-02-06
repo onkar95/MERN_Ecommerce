@@ -114,7 +114,7 @@ const ProductDetails = ({ match }) => {
                     <img
                       className="CarouselImage"
                       key={i}
-                      src={item.url}
+                      src={item?.url}
                       alt={`${i} Slide`}
                     />
                   ))}
